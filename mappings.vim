@@ -1,3 +1,4 @@
+map test i 
 imap ii <esc>
 
 nmap <leader>y ggVG"+y''
