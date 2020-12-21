@@ -1,5 +1,6 @@
 " autopairs configs
 au FileType python let b:AutoPairs = {}
+au FileType cpp let b:AutoPairs = {'{':'}'}
 
 " autosave configs
 let g:auto_save        = 1
