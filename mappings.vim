@@ -32,8 +32,8 @@ inoremap <F5> <esc>
 inoremap <F6> <esc>
 " Custom running py and cpp files for CP
 if filereadable(expand('%:p:r'))
-    autocmd filetype python nnoremap <F5> :w <CR>:!python3 % < %:p:r<CR>
-    autocmd filetype cpp nnoremap <F5> :w <CR>:!g++ --std=c++17 % -o testtt && ./testtt < ~/edu/cp/test3<CR>:!rm -f testtt<CR>
+    autocmd filetype python nnoremap <F5> :Autoformat<CR> :w <CR>:!python3 % < %:p:r<CR>
+    autocmd filetype cpp nnoremap <F5> :Autoformat<CR> :w <CR>:!g++ --std=c++17 % -o testtt && ./testtt < ~/edu/cp/test3<CR>:!rm -f testtt<CR>
     autocmd filetype python nnoremap <F6> :w <CR>:sp<CR>:term python3 %<CR>
     autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
 else
