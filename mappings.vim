@@ -3,6 +3,9 @@ imap ii <esc>
 nmap <leader>y ggVG"+y''
 nnoremap d "_d
 vnoremap d "_d
+nnoremap c "_c
+nnoremap s "_s
+vnoremap s "_s
 vnoremap <leader>p p
 vnoremap p "_dP
 map<C-a> ggVG
