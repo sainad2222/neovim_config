@@ -10,6 +10,7 @@ vnoremap <leader>p p
 vnoremap p "_dP
 map<C-a> ggVG
 map<C-c> "+y
+map<C-b> :Vex<CR>
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap <leader>l :let @/=""<CR>
