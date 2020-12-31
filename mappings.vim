@@ -49,3 +49,20 @@ else
 endif
 autocmd TermOpen * startinsert
 
+" Toggle transparency
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
+autocmd vimenter * hi SignColumn guibg=NONE ctermbg=NONE
+highlight Normal ctermbg=NONE guibg=NONE
+let g:is_transparent = 1
+function! Toggle_transparent()
+    if g:is_transparent == 0
+        highlight Normal ctermbg=NONE guibg=NONE
+        highlight SignColumn ctermbg=NONE guibg=NONE
+        let g:is_transparent = 1
+    else
+        set background=dark
+        let g:is_transparent = 0
+    endif
+endfunction
+
+nnoremap <silent> <C-t> :call Toggle_transparent()<CR>
