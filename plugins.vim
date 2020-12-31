@@ -12,6 +12,7 @@ Plug 'mbbill/undotree'                                      " undo tree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " fzf finally! yay
 Plug 'junegunn/fzf.vim'
 Plug 'gruvbox-community/gruvbox'                            " colorscheme gruvbox
+Plug 'flazz/vim-colorschemes'                               " more colorschemes
 Plug 'airblade/vim-gitgutter'                               " git status symbols in sidebar
 
 " Plug 'tpope/vim-fugitive'                                   " illegal git tool
