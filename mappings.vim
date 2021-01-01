@@ -64,5 +64,5 @@ function! Toggle_transparent()
         let g:is_transparent = 0
     endif
 endfunction
-
+autocmd vimenter * call Toggle_transparent()
 nnoremap <silent> <C-t> :call Toggle_transparent()<CR>

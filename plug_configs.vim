@@ -33,3 +33,7 @@ let g:netrw_liststyle = 3       " netrw tree style
 let g:netrw_banner = 0          " that top banner is useless
 let g:netrw_browse_split = 3    " open new files in new tab
 let g:netrw_winsize = 25        " take 25% width on :Vex
+
+" emmet configs
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
