@@ -6,6 +6,8 @@ vnoremap d "_d
 nnoremap c "_c
 nnoremap s "_s
 vnoremap s "_s
+nnoremap S "_S
+vnoremap S "_S
 vnoremap <leader>p p
 vnoremap p "_dP
 map<C-a> ggVG
