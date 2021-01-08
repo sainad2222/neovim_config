@@ -37,18 +37,17 @@ nnoremap <leader>6 :vertical resize -5<CR>
 noremap <F3> :Autoformat<CR>
 inoremap <F5> <esc>
 inoremap <F6> <esc>
+inoremap <F12> <esc>
+
 " Custom running py and cpp files for CP
-if filereadable(expand('%:p:r'))
-    autocmd filetype python nnoremap <F5> :Autoformat<CR> :w <CR>:!python3 % < %:p:r<CR>
-    autocmd filetype cpp nnoremap <F5> :Autoformat<CR> :w <CR>:!g++ --std=c++17 % -o testtt && ./testtt < ~/edu/cp/test3<CR>:!rm -f testtt<CR>
-    autocmd filetype python nnoremap <F6> :w <CR>:sp<CR>:term python3 %<CR>
-    autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
-else
-    autocmd filetype python nnoremap <F5> :echo 'No input file'<CR>
-    autocmd filetype cpp nnoremap <F5> :echo 'No input file'<CR>
-    autocmd filetype python nnoremap  <F6> :w <CR>:sp<CR>:term python3 %<CR>
-    autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
-endif
+autocmd filetype python nnoremap <F5> :Autoformat<CR> :w <CR>:!cf test %<CR>
+autocmd filetype python nnoremap <F6> :w <CR>:sp<CR>:term python3 %<CR>
+autocmd filetype python nnoremap <F12> :!cf submit %<CR>
+
+autocmd filetype cpp nnoremap <F5> :Autoformat<CR> :w <CR>:!cf test %<CR>
+autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
+autocmd filetype cpp nnoremap <F12> :!cf submit %<CR>
+
 autocmd TermOpen * startinsert
 
 " Toggle transparency
