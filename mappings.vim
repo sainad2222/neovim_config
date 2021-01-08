@@ -41,7 +41,7 @@ inoremap <F12> <esc>
 
 " Custom running py and cpp files for CP
 autocmd filetype python,cpp nnoremap <F5> :Autoformat<CR> :w <CR>:sp<CR>:term cf test %<CR>
-autocmd filetype python,cpp nnoremap <F12> :term cf submit -f %<CR>
+autocmd filetype python,cpp nnoremap <F12> :term cf submit -f %
 autocmd filetype python nnoremap <F6> :w <CR>:sp<CR>:term python3 %<CR>
 autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
 
