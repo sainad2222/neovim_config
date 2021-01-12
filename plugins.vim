@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-" testing
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}             " coc autocompletion
 Plug 'vim-airline/vim-airline'                              " better status bar
