@@ -15,3 +15,5 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+command! -nargs=0 Pretty :CocCommand prettier.formatFile
