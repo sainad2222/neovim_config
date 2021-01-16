@@ -1,6 +1,7 @@
 " autopairs configs
 au FileType python let b:AutoPairs = {}
 au FileType cpp let b:AutoPairs = {'{':'}'}
+au FileType json let b:AutoPairs = {'{':'}'}
 
 " autosave configs
 let g:auto_save        = 1
@@ -37,3 +38,6 @@ let g:netrw_winsize = 25        " take 25% width on :Vex
 " emmet configs
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+" fzf configs
+let g:fzf_action = {'return': 'tab split'}
