@@ -5,7 +5,8 @@
   "coc.preferences.jumpCommand":"tabe",
   "explorer.openAction.strategy":"tab",
   "explorer.keyMappings.global": {
-      "<cr>": ["wait","expandable?","expand","open"]
+      "<cr>": ["wait","expandable?","expand","open"],
+      "t": ["wait", "expanded?", "collapse", "expand"]
   },
   "explorer.icon.enableNerdfont":true
 }
