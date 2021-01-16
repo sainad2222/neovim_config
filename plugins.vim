@@ -15,7 +15,7 @@ Plug 'gruvbox-community/gruvbox'                            " colorscheme gruvbo
 Plug 'flazz/vim-colorschemes'                               " more colorschemes
 Plug 'airblade/vim-gitgutter'                               " git status symbols in sidebar
 Plug 'mattn/emmet-vim'                                      " emmet html completion
-
+Plug 'ryanoasis/vim-devicons'                               " dev icons
 " Plug 'tpope/vim-fugitive'                                   " illegal git tool
 " Plug 'ThePrimeagen/vim-be-good'                             " primeagen's vim training plugin
 call plug#end()

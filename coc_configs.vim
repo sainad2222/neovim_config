@@ -17,3 +17,13 @@ function! s:show_documentation()
 endfunction
 
 command! -nargs=0 Pretty :CocCommand prettier.formatFile
+
+
+" explorer configs
+nmap <C-b> :CocCommand explorer --toggle --position floating<CR>
+
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | silent! bd | exe 'CocCommand explorer --position floating ' . d | endif
+augroup END
