@@ -12,7 +12,6 @@ vnoremap <leader>p p
 vnoremap p "_dP
 map<C-a> ggVG
 map<C-c> "+y
-map<C-b> :Vex<CR>
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap <leader>l :let @/=""<CR>
@@ -29,11 +28,6 @@ nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-k> :wincmd k<CR>
 nnoremap <C-l> :wincmd l<CR>
-
-nnoremap <leader>8 :resize +5<CR>
-nnoremap <leader>2 :resize -5<CR>
-nnoremap <leader>4 :vertical resize +5<CR>
-nnoremap <leader>6 :vertical resize -5<CR>
 
 noremap <F3> :Autoformat<CR>
 inoremap <F5> <esc>
