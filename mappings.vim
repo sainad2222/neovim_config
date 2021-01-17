@@ -12,6 +12,8 @@ vnoremap <leader>p p
 vnoremap p "_dP
 map<C-a> ggVG
 map<C-c> "+y
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap <leader>l :let @/=""<CR>

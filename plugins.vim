@@ -18,5 +18,6 @@ Plug 'mattn/emmet-vim'                                      " emmet html complet
 Plug 'ryanoasis/vim-devicons'                               " dev icons
 Plug 'mhinz/vim-grepper'                                    " replacing all instances
 Plug 'airblade/vim-gitgutter'                               " git status symbols in sidebar
+Plug 'Yggdroot/indentLine'                                  " shows indentation with visual lines
 " Plug 'ThePrimeagen/vim-be-good'                             " primeagen's vim training plugin
 call plug#end()
