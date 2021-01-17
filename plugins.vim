@@ -13,10 +13,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " fzf finally! yay
 Plug 'junegunn/fzf.vim'
 Plug 'gruvbox-community/gruvbox'                            " colorscheme gruvbox
 Plug 'flazz/vim-colorschemes'                               " more colorschemes
-Plug 'airblade/vim-gitgutter'                               " git status symbols in sidebar
+Plug 'tpope/vim-fugitive'                                   " illegal git tool
 Plug 'mattn/emmet-vim'                                      " emmet html completion
 Plug 'ryanoasis/vim-devicons'                               " dev icons
 Plug 'mhinz/vim-grepper'                                    " replacing all instances
-" Plug 'tpope/vim-fugitive'                                   " illegal git tool
+Plug 'airblade/vim-gitgutter'                               " git status symbols in sidebar
 " Plug 'ThePrimeagen/vim-be-good'                             " primeagen's vim training plugin
 call plug#end()
