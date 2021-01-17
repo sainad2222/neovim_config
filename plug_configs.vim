@@ -41,3 +41,7 @@ autocmd FileType html,css EmmetInstall
 
 " fzf configs
 let g:fzf_action = {'return': 'tab split'}
+
+" vim-grepper configs
+let g:grepper={}
+let g:grepper.tools=["ag"]

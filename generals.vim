@@ -15,7 +15,7 @@ set noswapfile              " no swap files plz
 set nobackup                " no backup files too
 set mouse=a                 " use mouse in vim
 set clipboard=unnamedplus   " use system clipboard not just regiesters(imp)
-set shell=/usr/bin/zsh      " set zsh as shell
+set shell=zsh               " set zsh as shell
 set scrolloff=8             " Just use this and thank me later
 filetype on                 " to detect filetypes
 filetype indent on          " indent based on filetype
