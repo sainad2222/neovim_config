@@ -1,6 +1,5 @@
 {
   "clangd.path": "/home/sainath/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown","html"],
   "prettier.useTabs":true,
   "coc.preferences.jumpCommand":"tabe",
   "explorer.openAction.strategy":"tab",
