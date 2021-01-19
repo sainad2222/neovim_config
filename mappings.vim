@@ -43,7 +43,9 @@ autocmd filetype python,cpp nnoremap <F12> :term cf submit -f %
 autocmd filetype python nnoremap <F6> :w <CR>:sp<CR>:term python3 %<CR>
 autocmd filetype cpp nnoremap <F6> :w <CR>:sp<CR>:term g++ --std=c++17 % -o testtt && ./testtt && rm -f testtt<CR>
 
-autocmd TermOpen * startinsert
+if has('nvim')
+    autocmd TermOpen * startinsert
+endif
 
 " Toggle transparency
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
