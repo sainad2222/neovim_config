@@ -10,7 +10,7 @@ nnoremap S "_S
 vnoremap S "_S
 vnoremap <leader>p p
 vnoremap p "_dP
-map<C-a> ggVG
+nnoremap<C-a> ggVG
 map<C-c> "+y
 nnoremap n nzzzv
 nnoremap N Nzzzv
